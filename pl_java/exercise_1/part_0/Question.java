@@ -4,9 +4,9 @@ import java.util.List;
 
 public class Question {
 
-/*
- * Attributes
- */
+    /*
+     * Attributes
+     */
     private String questionText;
     private String shortAnswer;
     private String paragraphAnswer;
@@ -20,15 +20,15 @@ public class Question {
 
     private QuestionType questionType;
 
-
-/*
- * Constructors
- */
+    /*
+     * Constructors
+     */
     public Question(String questionText, QuestionType questionType) {
         setQuestionType(questionType);
-        switch(questionType){
+        switch (questionType) {
             case SHORT_ANSWER:
-                setQuestionText(questionText);;
+                setQuestionText(questionText);
+                ;
                 break;
             case PARAGRAPH_ANSWER:
                 setQuestionText(questionText);
@@ -41,7 +41,7 @@ public class Question {
     public Question(String questionText, List<String> choiceOptions, QuestionType questionType) {
         setQuestionType(questionType);
         setQuestionText(questionText);
-        switch(questionType){
+        switch (questionType) {
             case MULTIPLE_CHOICE:
                 setMultipleChoiceOptions(choiceOptions);
                 break;
@@ -56,10 +56,10 @@ public class Question {
         }
     }
 
-
-/*
- * Getters
- */
+    /*
+     * Getters
+     */
+    
     public String getQuestionText() {
         return questionText;
     }
@@ -100,17 +100,16 @@ public class Question {
         return questionType;
     }
 
-
-/*
- * Setters
- */
+    /*
+     * Setters
+     */
     public void setShortAnswer(String shortAnswer) {
         // Perform Input Validations
         /*
          * 
          */
 
-        if(questionType == QuestionType.SHORT_ANSWER){
+        if (questionType == QuestionType.SHORT_ANSWER) {
             this.shortAnswer = shortAnswer;
         }
     }
@@ -121,7 +120,7 @@ public class Question {
          * 
          */
 
-        if(questionType == QuestionType.PARAGRAPH_ANSWER){
+        if (questionType == QuestionType.PARAGRAPH_ANSWER) {
             this.paragraphAnswer = paragraphAnswer;
         }
     }
@@ -132,7 +131,7 @@ public class Question {
          * 
          */
 
-        if(questionType == QuestionType.MULTIPLE_CHOICE){
+        if (questionType == QuestionType.MULTIPLE_CHOICE) {
             this.multipleChoiceAnswer = multipleChoiceAnswer;
         }
     }
@@ -143,7 +142,7 @@ public class Question {
          * 
          */
 
-        if(questionType == QuestionType.CHECKBOX){
+        if (questionType == QuestionType.CHECKBOX) {
             this.checkboxAnswerList = checkboxAnswerList;
         }
     }
@@ -154,7 +153,7 @@ public class Question {
          * 
          */
 
-        if(questionType == QuestionType.DROPDOWN){
+        if (questionType == QuestionType.DROPDOWN) {
             this.dropDownAnswer = dropDownAnswer;
         }
     }
