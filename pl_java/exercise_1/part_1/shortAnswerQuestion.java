@@ -9,39 +9,38 @@ public class shortAnswerQuestion {
     private String shortAnswer;
     private QuestionType questionType;
 
+    // Constructor
 
-    // Constructor 
-
-    public shortAnswerQuestion(String questionText){
+    public shortAnswerQuestion(String questionText) {
         setQuestionType(QuestionType.SHORT_ANSWER);
         setQuestionText(questionText);
     }
 
-    // Getter 
+    // Getter
 
-    public String getQuestionText(){
+    public String getQuestionText() {
         return questionText;
     }
 
-    public String getShortAnswer(){
+    public String getShortAnswer() {
         return shortAnswer;
     }
 
-    public QuestionType getQuestionType(){
+    public QuestionType getQuestionType() {
         return questionType;
     }
-    
-    // Setter 
 
-    public void setShortAnswer(String shortAnswer){
-        this.shortAnswer=shortAnswer;
+    // Setter
+
+    public void setShortAnswer(String shortAnswer) {
+        this.shortAnswer = shortAnswer;
     }
 
-    public void setQuestionText(String questionText){
-        this.questionText=questionText;
+    public void setQuestionText(String questionText) {
+        this.questionText = questionText;
     }
 
-    public void setQuestionType(QuestionType questionType){
-        this.questionType=questionType;
+    public void setQuestionType(QuestionType questionType) {
+        this.questionType = questionType;
     }
 }
