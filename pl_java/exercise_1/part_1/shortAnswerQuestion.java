@@ -2,7 +2,7 @@ package pl_java.exercise_1.part_1;
 
 import pl_java.exercise_1.part_0.QuestionType;
 
-public class shortAnswerQuestion {
+public class ShortAnswerQuestion {
 
     // Attributes
     private String questionText;
@@ -11,7 +11,7 @@ public class shortAnswerQuestion {
 
     // Constructor
 
-    public shortAnswerQuestion(String questionText) {
+    public ShortAnswerQuestion(String questionText) {
         setQuestionType(QuestionType.SHORT_ANSWER);
         setQuestionText(questionText);
     }

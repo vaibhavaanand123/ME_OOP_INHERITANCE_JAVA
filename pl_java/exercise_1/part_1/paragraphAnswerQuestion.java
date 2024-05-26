@@ -2,14 +2,14 @@ package pl_java.exercise_1.part_1;
 
 import pl_java.exercise_1.part_0.QuestionType;
 
-public class paragraphAnswerQuestion {
+public class ParagraphAnswerQuestion {
     // attributes
     private String questionText;
     private String paragraphAnswer;
     private QuestionType questionType;
 
     // constructor
-    public paragraphAnswerQuestion(String questionText) {
+    public ParagraphAnswerQuestion(String questionText) {
         setQuestionType(QuestionType.PARAGRAPH_ANSWER);
         setQuestionText(questionText);
     }
