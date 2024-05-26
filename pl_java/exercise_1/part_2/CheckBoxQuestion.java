@@ -1,17 +1,15 @@
-package pl_java.exercise_1.part_1;
+package pl_java.exercise_1.part_2;
 
 import java.util.List;
 
 import pl_java.exercise_1.part_0.QuestionType;
 
-public class CheckBoxQuestion {
+public class CheckBoxQuestion extends Question {
 
     // attribute
-
-    private String questionText;
     private List<String> checkBoxAnswerList;
     private List<String> checkBoxOption;
-    private QuestionType questionType;
+   
 
     // constructor
 
@@ -25,10 +23,6 @@ public class CheckBoxQuestion {
 
     // getter
 
-    public String getQuestionText() {
-        return questionText;
-    }
-
     public List<String> getCheckBoxAnswerList() {
         return checkBoxAnswerList;
     }
@@ -37,16 +31,9 @@ public class CheckBoxQuestion {
         return checkBoxOption;
     }
 
-    public QuestionType getQuestionType() {
-        return questionType;
-    }
 
     // setter
 
-    public void setQuestionText(String questionText) {
-
-        this.questionText = questionText;
-    }
 
     public void setCheckBoxAnswerList(List<String> checkBoxAnswerList) {
         this.checkBoxAnswerList = checkBoxAnswerList;
@@ -56,8 +43,5 @@ public class CheckBoxQuestion {
         this.checkBoxOption = checkBoxOption;
     }
 
-    public void setQuestionType(QuestionType questionType) {
-        this.questionType = questionType;
-    }
 
 }

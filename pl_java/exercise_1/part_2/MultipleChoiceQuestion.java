@@ -1,17 +1,17 @@
-package pl_java.exercise_1.part_1;
+package pl_java.exercise_1.part_2;
 
 import pl_java.exercise_1.part_0.QuestionType;
 
 import java.util.List;
 
-public class MultipleChoiceQuestion {
+public class MultipleChoiceQuestion extends Question {
 
     // Attribute
 
-    private String questionText;
+
     private String multipleChoiceQuestion;
     private List<String> multipleChoiceOption;
-    private QuestionType questionType;
+  
 
     // constructor
 
@@ -23,9 +23,7 @@ public class MultipleChoiceQuestion {
 
     // getter
 
-    public String getQuestionText() {
-        return questionText;
-    }
+  
 
     public String getMultipleChoiceQuestion() {
         return multipleChoiceQuestion;
@@ -35,15 +33,10 @@ public class MultipleChoiceQuestion {
         return multipleChoiceOption;
     }
 
-    public QuestionType getQuestionType() {
-        return questionType;
-    }
 
     // setter
 
-    public void setQuestionText(String questionText) {
-        this.questionText = questionText;
-    }
+ 
 
     public void setMultipleChoiceQuestion(String multipleChoiceQuestion) {
         this.multipleChoiceQuestion = multipleChoiceQuestion;
@@ -53,8 +46,6 @@ public class MultipleChoiceQuestion {
         this.multipleChoiceOption = multipleChoiceOption;
     }
 
-    public void setQuestionType(QuestionType questionType) {
-        this.questionType = questionType;
-    }
+  
 
 }
